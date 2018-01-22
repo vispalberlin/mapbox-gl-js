@@ -91,6 +91,7 @@ class Tile {
     refreshedUponExpiration: boolean;
     reloadCallback: any;
     resourceTiming: ?Array<PerformanceResourceTiming>;
+    additionalRadius: number;
 
     /**
      * @param {OverscaledTileID} tileID
@@ -164,6 +165,12 @@ class Tile {
                     bucket.justReloaded = true;
                 }
             }
+        }
+
+        this.additionalRadius = 0;
+        for (const id in this.buckets) {
+            const bucket = this.buckets[id];
+            this.additionalRadius = Math.max(this.additionalRadius, painter.style.getLayer(bucket.layerIds[0]).queryRadius(bucket));
         }
 
         if (data.iconAtlasImage) {
