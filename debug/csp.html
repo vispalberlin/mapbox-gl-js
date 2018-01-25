@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Mapbox GL JS debug page</title>
-    <meta http-equiv="Content-Security-Policy" content="worker-src blob: ; img-src data: blob: ; script-src http: 'nonce-dummy'; connect-src https://*.tiles.mapbox.com https://api.mapbox.com">
+    <meta http-equiv="Content-Security-Policy" content="img-src data: blob: ; script-src http: 'nonce-dummy'; connect-src https://*.tiles.mapbox.com https://api.mapbox.com">
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel='stylesheet' href='/dist/mapbox-gl.css' />
@@ -18,6 +18,8 @@
 <script src='/dist/mapbox-gl-dev.js'></script>
 <script src='/debug/access_token_generated.js'></script>
 <script nonce="dummy">
+
+// mapboxgl.workerBundleURL = '/dist/mapbox-gl-worker.js';
 
 var map = window.map = new mapboxgl.Map({
     container: 'map',
