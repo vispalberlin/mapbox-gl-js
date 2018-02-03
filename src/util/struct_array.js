@@ -2,7 +2,7 @@
 
 // Note: all "sizes" are measured in bytes
 
-const assert = require('assert');
+import assert from 'assert';
 
 import type {Transferable} from '../types/transferable';
 

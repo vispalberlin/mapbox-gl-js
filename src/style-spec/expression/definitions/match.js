@@ -1,7 +1,8 @@
 // @flow
 
-const assert = require('assert');
-const { typeOf } = require('../values');
+import assert from 'assert';
+
+import { typeOf } from '../values';
 
 import type { Expression } from '../expression';
 import type ParsingContext from '../parsing_context';

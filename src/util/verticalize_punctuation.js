@@ -1,6 +1,6 @@
 // @flow
 
-const scriptDetection = require('./script_detection');
+import scriptDetection from './script_detection';
 
 module.exports = function verticalizePunctuation(input: string) {
     let output = '';

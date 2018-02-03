@@ -1,12 +1,13 @@
 // @flow
 
-const Evented = require('../../util/evented');
-const DOM = require('../../util/dom');
-const window = require('../../util/window');
-const util = require('../../util/util');
-const assert = require('assert');
-const LngLat = require('../../geo/lng_lat');
-const Marker = require('../marker');
+import Evented from '../../util/evented';
+
+import DOM from '../../util/dom';
+import window from '../../util/window';
+import util from '../../util/util';
+import assert from 'assert';
+import LngLat from '../../geo/lng_lat';
+import Marker from '../marker';
 
 import type Map from '../map';
 

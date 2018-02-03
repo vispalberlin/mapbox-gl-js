@@ -1,10 +1,11 @@
 // @flow
 
-const ShelfPack = require('@mapbox/shelf-pack');
-const {RGBAImage} = require('../util/image');
-const {imagePosition} = require('./image_atlas');
-const Texture = require('./texture');
-const assert = require('assert');
+import ShelfPack from '@mapbox/shelf-pack';
+
+import { RGBAImage } from '../util/image';
+import { imagePosition } from './image_atlas';
+import Texture from './texture';
+import assert from 'assert';
 
 import type {StyleImage} from '../style/style_image';
 import type Context from '../gl/context';

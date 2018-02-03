@@ -1,6 +1,6 @@
 // @flow
 
-const WorkerPool = require('./worker_pool');
+import WorkerPool from './worker_pool';
 
 let globalWorkerPool;
 

@@ -1,7 +1,8 @@
 // @flow
 
-const assert = require('assert');
-const pixelsToTileUnits = require('../source/pixels_to_tile_units');
+import assert from 'assert';
+
+import pixelsToTileUnits from '../source/pixels_to_tile_units';
 
 import type Painter from './painter';
 import type Program from './program';

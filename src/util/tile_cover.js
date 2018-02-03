@@ -1,7 +1,8 @@
 // @flow
 
-const Coordinate = require('../geo/coordinate');
-const {OverscaledTileID} = require('../source/tile_id');
+import Coordinate from '../geo/coordinate';
+
+import { OverscaledTileID } from '../source/tile_id';
 
 module.exports = tileCover;
 

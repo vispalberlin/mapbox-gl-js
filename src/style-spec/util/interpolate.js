@@ -1,6 +1,6 @@
 // @flow
 
-const Color = require('./color');
+import Color from './color';
 
 module.exports = {
     number,

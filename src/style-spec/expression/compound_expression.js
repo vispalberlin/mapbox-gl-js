@@ -1,9 +1,10 @@
 // @flow
 
-const { toString } = require('./types');
-const ParsingContext = require('./parsing_context');
-const EvaluationContext = require('./evaluation_context');
-const assert = require('assert');
+import { toString } from './types';
+
+import ParsingContext from './parsing_context';
+import EvaluationContext from './evaluation_context';
+import assert from 'assert';
 
 import type { Expression, ExpressionRegistry } from './expression';
 import type { Type } from './types';

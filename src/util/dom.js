@@ -1,7 +1,8 @@
 // @flow
 
-const Point = require('@mapbox/point-geometry');
-const window = require('./window');
+import Point from '@mapbox/point-geometry';
+
+import window from './window';
 
 exports.create = function (tagName: *, className?: string, container?: HTMLElement) {
     const el = window.document.createElement(tagName);

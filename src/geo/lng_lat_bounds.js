@@ -1,6 +1,6 @@
 // @flow
 
-const LngLat = require('./lng_lat');
+import LngLat from './lng_lat';
 
 import type {LngLatLike} from './lng_lat';
 

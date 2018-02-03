@@ -1,9 +1,10 @@
 // @flow
 
-const ajax = require('../util/ajax');
-const browser = require('../util/browser');
-const {normalizeSpriteURL} = require('../util/mapbox');
-const {RGBAImage} = require('../util/image');
+import ajax from '../util/ajax';
+
+import browser from '../util/browser';
+import { normalizeSpriteURL } from '../util/mapbox';
+import { RGBAImage } from '../util/image';
 
 import type {StyleImage} from './style_image';
 import type {RequestTransformFunction} from '../ui/map';

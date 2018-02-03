@@ -1,7 +1,8 @@
 // @flow
 
-const quickselect = require('quickselect');
-const calculateSignedArea = require('./util').calculateSignedArea;
+import quickselect from 'quickselect';
+
+import { calculateSignedArea } from './util';
 
 import type Point from '@mapbox/point-geometry';
 

@@ -1,6 +1,6 @@
 // @flow
 
-const window = require('./window');
+import window from './window';
 
 import type { Callback } from '../types/callback';
 

@@ -1,6 +1,6 @@
 // @flow
 
-const fs = require('fs');
+import fs from 'fs';
 
 // readFileSync calls must be written out long-form for brfs.
 /* eslint-disable prefer-template, no-path-concat */

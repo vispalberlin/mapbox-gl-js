@@ -1,5 +1,5 @@
 // @flow
-const Color = require('../style-spec/util/color');
+import Color from '../style-spec/util/color';
 
 import type {BlendFuncType, ColorMaskType} from './types';
 

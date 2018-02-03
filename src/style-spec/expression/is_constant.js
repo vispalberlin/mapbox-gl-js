@@ -1,6 +1,6 @@
 // @flow
 
-const { CompoundExpression } = require('./compound_expression');
+import { CompoundExpression } from './compound_expression';
 
 import type { Expression } from './expression.js';
 

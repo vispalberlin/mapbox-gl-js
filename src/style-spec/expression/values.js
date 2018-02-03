@@ -1,18 +1,9 @@
 // @flow
 
-const assert = require('assert');
-const Color = require('../util/color');
+import assert from 'assert';
 
-const {
-    NullType,
-    NumberType,
-    StringType,
-    BooleanType,
-    ColorType,
-    ObjectType,
-    ValueType,
-    array
-} = require('./types');
+import Color from '../util/color';
+import { NullType, NumberType, StringType, BooleanType, ColorType, ObjectType, ValueType, array } from './types';
 
 import type { Type } from './types';
 

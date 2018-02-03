@@ -1,5 +1,5 @@
 // @flow
-const { ColorAttachment, DepthAttachment } = require('./value');
+import { ColorAttachment, DepthAttachment } from './value';
 
 import type Context from './context';
 

@@ -1,6 +1,6 @@
 // @flow
 
-const {createExpression} = require('../expression');
+import { createExpression } from '../expression';
 
 import type {GlobalProperties} from '../expression';
 export type FeatureFilter = (globalProperties: GlobalProperties, feature: VectorTileFeature) => boolean;

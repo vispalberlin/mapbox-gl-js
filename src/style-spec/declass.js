@@ -1,5 +1,5 @@
 
-const extend = require('./util/extend');
+import extend from './util/extend';
 
 module.exports = declassStyle;
 

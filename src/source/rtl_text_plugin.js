@@ -1,8 +1,9 @@
 // @flow
 
-const ajax = require('../util/ajax');
-const Evented = require('../util/evented');
-const window = require('../util/window');
+import ajax from '../util/ajax';
+
+import Evented from '../util/evented';
+import window from '../util/window';
 
 let pluginRequested = false;
 let pluginBlobURL = null;

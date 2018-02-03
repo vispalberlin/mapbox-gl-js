@@ -1,7 +1,8 @@
 // @flow
 
-const ShelfPack = require('@mapbox/shelf-pack');
-const {RGBAImage} = require('../util/image');
+import ShelfPack from '@mapbox/shelf-pack';
+
+import { RGBAImage } from '../util/image';
 
 import type {StyleImage} from '../style/style_image';
 

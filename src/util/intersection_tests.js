@@ -1,6 +1,6 @@
 // @flow
 
-const {isCounterClockwise} = require('./util');
+import { isCounterClockwise } from './util';
 
 import type Point from '@mapbox/point-geometry';
 

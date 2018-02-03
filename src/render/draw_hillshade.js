@@ -1,10 +1,11 @@
 // @flow
-const Coordinate = require('../geo/coordinate');
-const Texture = require('./texture');
-const EXTENT = require('../data/extent');
-const mat4 = require('@mapbox/gl-matrix').mat4;
-const StencilMode = require('../gl/stencil_mode');
-const DepthMode = require('../gl/depth_mode');
+import Coordinate from '../geo/coordinate';
+
+import Texture from './texture';
+import EXTENT from '../data/extent';
+import { mat4 } from '@mapbox/gl-matrix';
+import StencilMode from '../gl/stencil_mode';
+import DepthMode from '../gl/depth_mode';
 
 import type Painter from './painter';
 import type SourceCache from '../source/source_cache';

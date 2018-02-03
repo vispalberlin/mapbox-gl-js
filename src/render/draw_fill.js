@@ -1,8 +1,9 @@
 // @flow
 
-const pattern = require('./pattern');
-const Color = require('../style-spec/util/color');
-const DepthMode = require('../gl/depth_mode');
+import pattern from './pattern';
+
+import Color from '../style-spec/util/color';
+import DepthMode from '../gl/depth_mode';
 
 import type Painter from './painter';
 import type SourceCache from '../source/source_cache';

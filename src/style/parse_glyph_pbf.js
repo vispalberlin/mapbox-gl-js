@@ -1,7 +1,8 @@
 // @flow
 
-const {AlphaImage} = require('../util/image');
-const Protobuf = require('pbf');
+import { AlphaImage } from '../util/image';
+
+import Protobuf from 'pbf';
 const border = 3;
 
 import type {StyleGlyph} from './style_glyph';

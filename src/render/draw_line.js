@@ -1,8 +1,9 @@
 // @flow
 
-const browser = require('../util/browser');
-const pixelsToTileUnits = require('../source/pixels_to_tile_units');
-const DepthMode = require('../gl/depth_mode');
+import browser from '../util/browser';
+
+import pixelsToTileUnits from '../source/pixels_to_tile_units';
+import DepthMode from '../gl/depth_mode';
 
 import type Painter from './painter';
 import type SourceCache from '../source/source_cache';

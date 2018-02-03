@@ -1,7 +1,8 @@
 // @flow
 
-const util = require('../util/util');
-const EXTENT = require('./extent');
+import util from '../util/util';
+
+import EXTENT from './extent';
 
 import type Point from '@mapbox/point-geometry';
 

@@ -1,7 +1,8 @@
 // @flow
 
-const config = require('./config');
-const browser = require('./browser');
+import config from './config';
+
+import browser from './browser';
 
 const help = 'See https://www.mapbox.com/api-documentation/#access-tokens';
 

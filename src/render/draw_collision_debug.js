@@ -5,9 +5,9 @@ import type SourceCache from '../source/source_cache';
 import type StyleLayer from '../style/style_layer';
 import type {OverscaledTileID} from '../source/tile_id';
 import type SymbolBucket from '../data/bucket/symbol_bucket';
-const pixelsToTileUnits = require('../source/pixels_to_tile_units');
-const DepthMode = require('../gl/depth_mode');
-const StencilMode = require('../gl/stencil_mode');
+import pixelsToTileUnits from '../source/pixels_to_tile_units';
+import DepthMode from '../gl/depth_mode';
+import StencilMode from '../gl/stencil_mode';
 
 module.exports = drawCollisionDebug;
 

@@ -1,6 +1,6 @@
 
-const getType = require('../util/get_type');
-const ValidationError = require('../error/validation_error');
+import getType from '../util/get_type';
+import ValidationError from '../error/validation_error';
 
 module.exports = function validateBoolean(options) {
     const value = options.value;

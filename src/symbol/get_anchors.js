@@ -1,8 +1,9 @@
 // @flow
 
-const interpolate = require('../style-spec/util/interpolate').number;
-const Anchor = require('../symbol/anchor');
-const checkMaxAngle = require('./check_max_angle');
+import { number as interpolate } from '../style-spec/util/interpolate';
+
+import Anchor from '../symbol/anchor';
+import checkMaxAngle from './check_max_angle';
 
 import type Point from '@mapbox/point-geometry';
 import type {Shaping, PositionedIcon} from './shaping';

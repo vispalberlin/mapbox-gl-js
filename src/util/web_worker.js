@@ -1,6 +1,6 @@
 // @flow
 
-const Worker = require('../source/worker');
+import Worker from '../source/worker';
 
 import type {WorkerSource} from '../source/worker_source';
 

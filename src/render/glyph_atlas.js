@@ -1,7 +1,8 @@
 // @flow
 
-const ShelfPack = require('@mapbox/shelf-pack');
-const {AlphaImage} = require('../util/image');
+import ShelfPack from '@mapbox/shelf-pack';
+
+import { AlphaImage } from '../util/image';
 
 import type {GlyphMetrics, StyleGlyph} from '../style/style_glyph';
 

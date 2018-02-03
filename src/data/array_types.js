@@ -1,11 +1,12 @@
 // This file is generated. Edit build/generate-struct-arrays.js, then run `yarn run codegen`.
 // @flow
 
-const assert = require('assert');
-const {StructArray} = require('../util/struct_array');
-const {Struct} = require('../util/struct_array');
-const {register} = require('../util/web_worker_transfer');
-const Point = require('@mapbox/point-geometry');
+import assert from 'assert';
+
+import { StructArray } from '../util/struct_array';
+import { Struct } from '../util/struct_array';
+import { register } from '../util/web_worker_transfer';
+import Point from '@mapbox/point-geometry';
 
 
 /**

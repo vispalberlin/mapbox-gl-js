@@ -1,8 +1,8 @@
 
-const extend = require('../util/extend');
-const unbundle = require('../util/unbundle_jsonlint');
-const {isExpression} = require('../expression');
-const {isFunction} = require('../function');
+import extend from '../util/extend';
+import unbundle from '../util/unbundle_jsonlint';
+import { isExpression } from '../expression';
+import { isFunction } from '../function';
 
 // Main recursive validation function. Tracks:
 //

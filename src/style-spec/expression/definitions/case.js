@@ -1,7 +1,8 @@
 // @flow
 
-const assert = require('assert');
-const { BooleanType } = require('../types');
+import assert from 'assert';
+
+import { BooleanType } from '../types';
 
 import type { Expression } from '../expression';
 import type ParsingContext from '../parsing_context';

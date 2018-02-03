@@ -1,6 +1,6 @@
 // @flow
 
-const window = require('./window');
+import window from './window';
 
 const now = window.performance && window.performance.now ?
     window.performance.now.bind(window.performance) :

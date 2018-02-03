@@ -1,7 +1,8 @@
 // @flow
 
-const assert = require('assert');
-const extend = require('../util/extend');
+import assert from 'assert';
+
+import extend from '../util/extend';
 
 import type {StylePropertySpecification} from '../style-spec';
 

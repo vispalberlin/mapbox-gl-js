@@ -1,6 +1,7 @@
 // @flow
 
-const {createLayout} = require('../../util/struct_array');
+import { createLayout } from '../../util/struct_array';
+
 import type {StructArrayLayout} from '../../util/struct_array';
 
 const symbolLayoutAttributes = createLayout([

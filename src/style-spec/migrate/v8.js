@@ -1,6 +1,6 @@
 
-const Reference = require('../reference/v8.json');
-const URL = require('url');
+import Reference from '../reference/v8.json';
+import URL from 'url';
 
 function getPropertyReference(propertyName) {
     for (let i = 0; i < Reference.layout.length; i++) {

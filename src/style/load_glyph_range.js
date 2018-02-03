@@ -1,8 +1,9 @@
 // @flow
 
-const {normalizeGlyphsURL} = require('../util/mapbox');
-const ajax = require('../util/ajax');
-const parseGlyphPBF = require('./parse_glyph_pbf');
+import { normalizeGlyphsURL } from '../util/mapbox';
+
+import ajax from '../util/ajax';
+import parseGlyphPBF from './parse_glyph_pbf';
 
 import type {StyleGlyph} from './style_glyph';
 import type {RequestTransformFunction} from '../ui/map';

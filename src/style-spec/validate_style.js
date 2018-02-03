@@ -1,7 +1,7 @@
 
-const validateStyleMin = require('./validate_style.min');
-const ParsingError = require('./error/parsing_error');
-const jsonlint = require('jsonlint-lines-primitives');
+import validateStyleMin from './validate_style.min';
+import ParsingError from './error/parsing_error';
+import jsonlint from 'jsonlint-lines-primitives';
 
 /**
  * Validate a Mapbox GL style against the style specification.

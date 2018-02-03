@@ -1,6 +1,6 @@
 // @flow
 
-const util = require('../util/util');
+import util from '../util/util';
 
 /**
  * Packs two numbers, interpreted as 8-bit unsigned integers, into a single

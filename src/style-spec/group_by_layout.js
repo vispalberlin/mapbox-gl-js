@@ -1,5 +1,5 @@
 
-const refProperties = require('./util/ref_properties');
+import refProperties from './util/ref_properties';
 
 function stringify(obj) {
     const type = typeof obj;

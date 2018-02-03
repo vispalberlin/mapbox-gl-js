@@ -1,6 +1,6 @@
 // @flow
 
-const { isValue, typeOf } = require('../values');
+import { isValue, typeOf } from '../values';
 
 import type { Type } from '../types';
 import type { Value }  from '../values';

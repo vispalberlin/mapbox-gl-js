@@ -1,6 +1,6 @@
 // @flow
 
-const assert = require('assert');
+import assert from 'assert';
 
 class DictionaryCoder {
     _stringToNumber: { [string]: number };

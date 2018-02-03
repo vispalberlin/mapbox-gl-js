@@ -1,7 +1,8 @@
 // @flow
 
-const Color = require('../style-spec/util/color');
-const util = require('../util/util');
+import Color from '../style-spec/util/color';
+
+import util from '../util/util';
 
 import type Context from './context';
 import type {

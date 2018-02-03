@@ -1,8 +1,9 @@
 // @flow
 
-const UnitBezier = require('@mapbox/unitbezier');
-const Coordinate = require('../geo/coordinate');
-const Point = require('@mapbox/point-geometry');
+import UnitBezier from '@mapbox/unitbezier';
+
+import Coordinate from '../geo/coordinate';
+import Point from '@mapbox/point-geometry';
 
 import type {Callback} from '../types/callback';
 

@@ -1,6 +1,6 @@
 // @flow
 
-const Point = require('@mapbox/point-geometry');
+import Point from '@mapbox/point-geometry';
 
 module.exports = clipLine;
 

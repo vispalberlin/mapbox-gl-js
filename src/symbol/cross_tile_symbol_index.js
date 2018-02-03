@@ -1,6 +1,6 @@
 // @flow
 
-const EXTENT = require('../data/extent');
+import EXTENT from '../data/extent';
 
 import type {OverscaledTileID} from '../source/tile_id';
 import type {SymbolInstance} from '../data/bucket/symbol_bucket';

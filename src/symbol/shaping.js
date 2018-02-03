@@ -1,8 +1,9 @@
 // @flow
 
-const scriptDetection = require('../util/script_detection');
-const verticalizePunctuation = require('../util/verticalize_punctuation');
-const rtlTextPlugin = require('../source/rtl_text_plugin');
+import scriptDetection from '../util/script_detection';
+
+import verticalizePunctuation from '../util/verticalize_punctuation';
+import rtlTextPlugin from '../source/rtl_text_plugin';
 
 import type {StyleGlyph} from '../style/style_glyph';
 import type {ImagePosition} from '../render/image_atlas';

@@ -1,7 +1,8 @@
 // @flow
 
-const CircleBucket = require('./circle_bucket');
-const {register} = require('../../util/web_worker_transfer');
+import CircleBucket from './circle_bucket';
+
+import { register } from '../../util/web_worker_transfer';
 
 import type HeatmapStyleLayer from '../../style/style_layer/heatmap_style_layer';
 

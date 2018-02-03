@@ -1,8 +1,9 @@
 // @flow
 
-const Queue = require('tinyqueue');
-const Point = require('@mapbox/point-geometry');
-const distToSegmentSquared = require('./intersection_tests').distToSegmentSquared;
+import Queue from 'tinyqueue';
+
+import Point from '@mapbox/point-geometry';
+import { distToSegmentSquared } from './intersection_tests';
 
 /**
  * Finds an approximation of a polygon's Pole Of Inaccessibiliy https://en.wikipedia.org/wiki/Pole_of_inaccessibility

@@ -1,8 +1,9 @@
 // @flow
 
-const ValidationError = require('../error/validation_error');
-const {createExpression, createPropertyExpression} = require('../expression');
-const unbundle = require('../util/unbundle_jsonlint');
+import ValidationError from '../error/validation_error';
+
+import { createExpression, createPropertyExpression } from '../expression';
+import unbundle from '../util/unbundle_jsonlint';
 
 module.exports = function validateExpression(options: any) {
     const expression = (options.expressionContext === 'property' ? createPropertyExpression : createExpression)(unbundle.deep(options.value), options.valueSpec);

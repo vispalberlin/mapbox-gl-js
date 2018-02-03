@@ -1,7 +1,8 @@
 // @flow
 
-const DOM = require('../../util/dom');
-const util = require('../../util/util');
+import DOM from '../../util/dom';
+
+import util from '../../util/util';
 
 import type Map from '../map';
 

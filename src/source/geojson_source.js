@@ -1,11 +1,12 @@
 // @flow
 
-const Evented = require('../util/evented');
-const util = require('../util/util');
-const window = require('../util/window');
-const EXTENT = require('../data/extent');
-const ResourceType = require('../util/ajax').ResourceType;
-const browser = require('../util/browser');
+import Evented from '../util/evented';
+
+import util from '../util/util';
+import window from '../util/window';
+import EXTENT from '../data/extent';
+import { ResourceType } from '../util/ajax';
+import browser from '../util/browser';
 
 import type {Source} from './source';
 import type Map from '../ui/map';

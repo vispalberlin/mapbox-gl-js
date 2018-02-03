@@ -1,6 +1,6 @@
 // @flow
 
-const RuntimeError = require('./runtime_error');
+import RuntimeError from './runtime_error';
 
 import type { Expression } from './expression';
 
