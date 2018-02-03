@@ -127,4 +127,4 @@ class RasterDEMTileSource extends RasterTileSource implements Source {
 
 }
 
-module.exports = RasterDEMTileSource;
+export default RasterDEMTileSource;

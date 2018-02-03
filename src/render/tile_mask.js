@@ -60,7 +60,7 @@ export type Mask = {
 // 2/1/3, since it is not a descendant of it.
 
 
-module.exports = function(renderableTiles: Array<Tile>, context: Context) {
+export default function(renderableTiles: Array<Tile>, context: Context) {
     const sortedRenderables = renderableTiles.sort((a, b) => { return a.tileID.isLessThan(b.tileID) ? -1 : b.tileID.isLessThan(a.tileID) ? 1 : 0; });
 
     for (let i = 0; i < sortedRenderables.length; i++) {

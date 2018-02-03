@@ -106,7 +106,7 @@ const sourceTypes = {
  * @param {Dispatcher} dispatcher
  * @returns {Source}
  */
-exports.create = function(id: string, specification: SourceSpecification, dispatcher: Dispatcher, eventedParent: Evented) {
+export const create = function(id: string, specification: SourceSpecification, dispatcher: Dispatcher, eventedParent: Evented) {
     const source = new sourceTypes[specification.type](id, (specification: any), dispatcher, eventedParent);
 
     if (source.id !== id) {
@@ -117,11 +117,11 @@ exports.create = function(id: string, specification: SourceSpecification, dispat
     return source;
 };
 
-exports.getType = function (name: string) {
+export const getType = function (name: string) {
     return sourceTypes[name];
 };
 
-exports.setType = function (name: string, type: Class<Source>) {
+export const setType = function (name: string, type: Class<Source>) {
     sourceTypes[name] = type;
 };
 

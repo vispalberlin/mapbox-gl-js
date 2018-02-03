@@ -65,4 +65,4 @@ class Dispatcher {
     }
 }
 
-module.exports = Dispatcher;
+export default Dispatcher;

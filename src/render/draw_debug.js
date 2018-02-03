@@ -14,7 +14,7 @@ import type Painter from './painter';
 import type SourceCache from '../source/source_cache';
 import type {OverscaledTileID} from '../source/tile_id';
 
-module.exports = drawDebug;
+export default drawDebug;
 
 function drawDebug(painter: Painter, sourceCache: SourceCache, coords: Array<OverscaledTileID>) {
     for (let i = 0; i < coords.length; i++) {

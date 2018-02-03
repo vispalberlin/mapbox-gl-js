@@ -48,4 +48,4 @@ class CircleStyleLayer extends StyleLayer {
     }
 }
 
-module.exports = CircleStyleLayer;
+export default CircleStyleLayer;

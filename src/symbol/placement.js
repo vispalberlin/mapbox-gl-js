@@ -412,4 +412,4 @@ function packOpacity(opacityState: OpacityState): number {
         opacityBits * shift1 + targetBit;
 }
 
-module.exports = Placement;
+export default Placement;

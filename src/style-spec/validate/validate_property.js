@@ -5,7 +5,7 @@ import getType from '../util/get_type';
 import { isFunction } from '../function';
 import unbundle from '../util/unbundle_jsonlint';
 
-module.exports = function validateProperty(options, propertyType) {
+export default function validateProperty(options, propertyType) {
     const key = options.key;
     const style = options.style;
     const styleSpec = options.styleSpec;

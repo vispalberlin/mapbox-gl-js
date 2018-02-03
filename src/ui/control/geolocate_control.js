@@ -388,7 +388,7 @@ class GeolocateControl extends Evented {
     }
 }
 
-module.exports = GeolocateControl;
+export default GeolocateControl;
 
 /* Geolocate Control Watch States
  * This is the private state of the control.

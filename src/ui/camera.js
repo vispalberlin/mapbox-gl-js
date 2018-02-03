@@ -950,4 +950,4 @@ class Camera extends Evented {
     }
 }
 
-module.exports = Camera;
+export default Camera;

@@ -24,7 +24,7 @@ const handlers = {
     touchZoomRotate
 };
 
-module.exports = function bindHandlers(map: Map, options: {}) {
+export default function bindHandlers(map: Map, options: {}) {
     const el = map.getCanvasContainer();
     let contextMenuEvent = null;
     let mouseDown = false;

@@ -199,4 +199,4 @@ class ImageManager {
     }
 }
 
-module.exports = ImageManager;
+export default ImageManager;

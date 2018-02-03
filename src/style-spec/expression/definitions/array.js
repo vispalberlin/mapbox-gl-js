@@ -77,4 +77,4 @@ class ArrayAssertion implements Expression {
     }
 }
 
-module.exports = ArrayAssertion;
+export default ArrayAssertion;

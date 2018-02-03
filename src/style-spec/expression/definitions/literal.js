@@ -52,4 +52,4 @@ class Literal implements Expression {
     }
 }
 
-module.exports = Literal;
+export default Literal;

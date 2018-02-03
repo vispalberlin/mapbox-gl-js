@@ -140,4 +140,4 @@ class Evented {
     }
 }
 
-module.exports = Evented;
+export default Evented;

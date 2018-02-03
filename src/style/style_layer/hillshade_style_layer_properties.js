@@ -27,4 +27,9 @@ const paint: Properties<PaintProps> = new Properties({
     "hillshade-accent-color": new DataConstantProperty(styleSpec["paint_hillshade"]["hillshade-accent-color"]),
 });
 
-module.exports = { paint };
+const exported = {
+    paint
+};
+
+export default exported;
+export { paint };

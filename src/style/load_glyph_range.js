@@ -9,7 +9,7 @@ import type {StyleGlyph} from './style_glyph';
 import type {RequestTransformFunction} from '../ui/map';
 import type {Callback} from '../types/callback';
 
-module.exports = function (fontstack: string,
+export default function (fontstack: string,
                            range: number,
                            urlTemplate: string,
                            requestTransform: RequestTransformFunction,

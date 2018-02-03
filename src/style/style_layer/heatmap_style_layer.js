@@ -76,4 +76,4 @@ class HeatmapStyleLayer extends StyleLayer {
     }
 }
 
-module.exports = HeatmapStyleLayer;
+export default HeatmapStyleLayer;

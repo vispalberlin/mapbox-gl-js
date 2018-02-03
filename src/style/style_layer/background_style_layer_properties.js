@@ -21,4 +21,9 @@ const paint: Properties<PaintProps> = new Properties({
     "background-opacity": new DataConstantProperty(styleSpec["paint_background"]["background-opacity"]),
 });
 
-module.exports = { paint };
+const exported = {
+    paint
+};
+
+export default exported;
+export { paint };

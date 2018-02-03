@@ -89,7 +89,7 @@ class LineStyleLayer extends StyleLayer {
     }
 }
 
-module.exports = LineStyleLayer;
+export default LineStyleLayer;
 
 function getLineWidth(lineWidth, lineGapWidth) {
     if (lineGapWidth > 0) {

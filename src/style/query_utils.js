@@ -48,8 +48,11 @@ function translate(queryGeometry: Array<Array<Point>>,
     return translated;
 }
 
-module.exports = {
+const exported = {
     getMaximumPaintValue,
     translateDistance,
     translate
 };
+
+export default exported;
+export { getMaximumPaintValue, translateDistance, translate };

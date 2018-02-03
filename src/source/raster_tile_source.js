@@ -141,4 +141,4 @@ class RasterTileSource extends Evented implements Source {
     }
 }
 
-module.exports = RasterTileSource;
+export default RasterTileSource;

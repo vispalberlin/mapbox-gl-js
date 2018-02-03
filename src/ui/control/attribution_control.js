@@ -152,4 +152,4 @@ class AttributionControl {
 
 }
 
-module.exports = AttributionControl;
+export default AttributionControl;

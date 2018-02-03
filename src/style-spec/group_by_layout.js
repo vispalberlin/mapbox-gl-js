@@ -31,7 +31,7 @@ function getKey(layer) {
     return key;
 }
 
-module.exports = groupByLayout;
+export default groupByLayout;
 
 /**
  * Given an array of layers, return an array of arrays of layers where all

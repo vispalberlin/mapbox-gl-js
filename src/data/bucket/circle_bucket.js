@@ -135,4 +135,4 @@ class CircleBucket<Layer: CircleStyleLayer | HeatmapStyleLayer> implements Bucke
 
 register('CircleBucket', CircleBucket, {omit: ['layers']});
 
-module.exports = CircleBucket;
+export default CircleBucket;

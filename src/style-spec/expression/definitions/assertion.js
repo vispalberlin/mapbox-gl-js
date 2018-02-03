@@ -71,4 +71,4 @@ class Assertion implements Expression {
     }
 }
 
-module.exports = Assertion;
+export default Assertion;

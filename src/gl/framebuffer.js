@@ -35,4 +35,4 @@ class Framebuffer {
     }
 }
 
-module.exports = Framebuffer;
+export default Framebuffer;

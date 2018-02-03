@@ -263,4 +263,4 @@ class CrossTileSymbolIndex {
     }
 }
 
-module.exports = CrossTileSymbolIndex;
+export default CrossTileSymbolIndex;

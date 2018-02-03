@@ -41,7 +41,7 @@ export type TileState =
     | 'unloaded'  // Tile data has been deleted.
     | 'errored'   // Tile data was not loaded because of an error.
     | 'expired';/* Tile data was previously loaded, but has expired per its
- * HTTP headers and is in the process of refreshing. */
+* HTTP headers and is in the process of refreshing. */
 
 /**
  * A tile object is the combination of a Coordinate, which defines
@@ -421,4 +421,4 @@ class Tile {
     }
 }
 
-module.exports = Tile;
+export default Tile;

@@ -14,14 +14,14 @@ import type {CrossFaded} from '../style/cross_faded';
  *
  * @returns true if a needed image is missing and rendering needs to be skipped.
  */
-exports.isPatternMissing = function(image: ?CrossFaded<string>, painter: Painter): boolean {
+export const isPatternMissing = function(image: ?CrossFaded<string>, painter: Painter): boolean {
     if (!image) return false;
     const imagePosA = painter.imageManager.getPattern(image.from);
     const imagePosB = painter.imageManager.getPattern(image.to);
     return !imagePosA || !imagePosB;
 };
 
-exports.prepare = function (image: CrossFaded<string>, painter: Painter, program: Program) {
+export const prepare = function (image: CrossFaded<string>, painter: Painter, program: Program) {
     const context = painter.context;
     const gl = context.gl;
 
@@ -46,7 +46,7 @@ exports.prepare = function (image: CrossFaded<string>, painter: Painter, program
     painter.imageManager.bind(painter.context);
 };
 
-exports.setTile = function (tile: {tileID: OverscaledTileID, tileSize: number}, painter: Painter, program: Program) {
+export const setTile = function (tile: {tileID: OverscaledTileID, tileSize: number}, painter: Painter, program: Program) {
     const gl = painter.context.gl;
 
     gl.uniform1f(program.uniforms.u_tile_units_to_pixels, 1 / pixelsToTileUnits(tile, 1, painter.transform.tileZoom));

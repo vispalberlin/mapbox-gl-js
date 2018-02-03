@@ -92,4 +92,4 @@ class PauseablePlacement {
     }
 }
 
-module.exports = PauseablePlacement;
+export default PauseablePlacement;

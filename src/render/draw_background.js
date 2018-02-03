@@ -9,7 +9,7 @@ import type Painter from './painter';
 import type SourceCache from '../source/source_cache';
 import type BackgroundStyleLayer from '../style/style_layer/background_style_layer';
 
-module.exports = drawBackground;
+export default drawBackground;
 
 function drawBackground(painter: Painter, sourceCache: SourceCache, layer: BackgroundStyleLayer) {
     const color = layer.paint.get('background-color');

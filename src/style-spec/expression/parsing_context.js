@@ -178,7 +178,7 @@ class ParsingContext {
     }
 }
 
-module.exports = ParsingContext;
+export default ParsingContext;
 
 function isConstant(expression: Expression) {
     // requires within function body to workaround circular dependency

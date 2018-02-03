@@ -112,4 +112,4 @@ class Match implements Expression {
     }
 }
 
-module.exports = Match;
+export default Match;

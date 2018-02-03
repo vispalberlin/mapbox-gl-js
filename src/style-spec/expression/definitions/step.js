@@ -110,4 +110,4 @@ class Step implements Expression {
     }
 }
 
-module.exports = Step;
+export default Step;

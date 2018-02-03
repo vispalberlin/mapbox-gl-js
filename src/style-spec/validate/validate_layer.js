@@ -8,7 +8,7 @@ import validateLayoutProperty from './validate_layout_property';
 import validateSpec from './validate';
 import extend from '../util/extend';
 
-module.exports = function validateLayer(options) {
+export default function validateLayer(options) {
     let errors = [];
 
     const layer = options.value;

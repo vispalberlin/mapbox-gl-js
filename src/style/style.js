@@ -1034,4 +1034,4 @@ class Style extends Evented {
     }
 }
 
-module.exports = Style;
+export default Style;

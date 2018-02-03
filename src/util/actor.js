@@ -101,4 +101,4 @@ class Actor {
     }
 }
 
-module.exports = Actor;
+export default Actor;

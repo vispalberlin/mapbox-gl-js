@@ -199,7 +199,11 @@ class StyleLayer extends Evented {
     }
 }
 
-module.exports = StyleLayer;
+export default StyleLayer;
+
+export const {
+    create
+} = StyleLayer;
 
 import './style_layer/circle_style_layer';
 import './style_layer/heatmap_style_layer';

@@ -96,7 +96,7 @@ function renameProperty(obj, from, to) {
     obj[to] = obj[from]; delete obj[from];
 }
 
-module.exports = function(style) {
+export default function(style) {
     style.version = 8;
 
     // Rename properties, reverse coordinates in source and layers

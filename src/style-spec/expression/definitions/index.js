@@ -526,4 +526,4 @@ CompoundExpression.register(expressions, {
     ]
 });
 
-module.exports = expressions;
+export default expressions;

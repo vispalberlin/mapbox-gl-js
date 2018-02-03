@@ -238,7 +238,4 @@ function align(offset: number, size: number): number {
     return Math.ceil(offset / size) * size;
 }
 
-module.exports.StructArray = StructArray;
-module.exports.Struct = Struct;
-module.exports.viewTypes = viewTypes;
-module.exports.createLayout = createLayout;
+export { StructArray, Struct, viewTypes, createLayout };

@@ -180,4 +180,32 @@ uniform ${precision} ${type} u_${name};
     });
 }
 
-module.exports = shaders;
+export default shaders;
+
+export const {
+    prelude,
+    background,
+    backgroundPattern,
+    circle,
+    clippingMask,
+    heatmap,
+    heatmapTexture,
+    collisionBox,
+    collisionCircle,
+    debug,
+    fill,
+    fillOutline,
+    fillOutlinePattern,
+    fillPattern,
+    fillExtrusion,
+    fillExtrusionPattern,
+    extrusionTexture,
+    hillshadePrepare,
+    hillshade,
+    line,
+    linePattern,
+    lineSDF,
+    raster,
+    symbolIcon,
+    symbolSDF
+} = shaders;

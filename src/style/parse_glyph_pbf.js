@@ -37,8 +37,8 @@ function readGlyph(tag: number, glyph: Object, pbf: Protobuf) {
     else if (tag === 7) glyph.advance = pbf.readVarint();
 }
 
-module.exports = function (data: ArrayBuffer | Uint8Array): Array<StyleGlyph> {
+export default function (data: ArrayBuffer | Uint8Array): Array<StyleGlyph> {
     return new Protobuf(data).readFields(readFontstacks, []);
 };
 
-module.exports.GLYPH_PBF_BORDER = border;
+export const GLYPH_PBF_BORDER = border;

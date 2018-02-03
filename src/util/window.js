@@ -64,4 +64,4 @@ function restore(): Window {
     return window;
 }
 
-module.exports = restore();
+export default restore();

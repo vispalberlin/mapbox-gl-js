@@ -211,7 +211,7 @@ register(
     { omit: ['rawTileData', 'sourceLayerCoder', 'collisionIndex'] }
 );
 
-module.exports = FeatureIndex;
+export default FeatureIndex;
 
 function topDownFeatureComparator(a, b) {
     return b - a;

@@ -161,4 +161,4 @@ class VideoSource extends ImageSource {
     }
 }
 
-module.exports = VideoSource;
+export default VideoSource;

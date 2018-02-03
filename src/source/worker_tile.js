@@ -185,4 +185,4 @@ function recalculateLayers(layers: $ReadOnlyArray<StyleLayer>, zoom: number) {
     }
 }
 
-module.exports = WorkerTile;
+export default WorkerTile;

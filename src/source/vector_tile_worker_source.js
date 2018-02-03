@@ -198,4 +198,4 @@ class VectorTileWorkerSource implements WorkerSource {
     }
 }
 
-module.exports = VectorTileWorkerSource;
+export default VectorTileWorkerSource;

@@ -15,7 +15,7 @@ import { distToSegmentSquared } from './intersection_tests';
  * @returns Pole of Inaccessibiliy.
  * @private
  */
-module.exports = function (polygonRings: Array<Array<Point>>, precision?: number = 1, debug?: boolean = false): Point {
+export default function (polygonRings: Array<Array<Point>>, precision?: number = 1, debug?: boolean = false): Point {
     // find the bounding box of the outer ring
     let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
     const outerRing = polygonRings[0];

@@ -90,4 +90,4 @@ class NavigationControl {
     }
 }
 
-module.exports = NavigationControl;
+export default NavigationControl;

@@ -57,7 +57,7 @@ class ScaleControl {
     }
 }
 
-module.exports = ScaleControl;
+export default ScaleControl;
 
 function updateScale(map, container, options) {
     // A horizontal scale is imagined to be present at center of the map

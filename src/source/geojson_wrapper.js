@@ -90,4 +90,4 @@ class GeoJSONWrapper implements VectorTile, VectorTileLayer {
     }
 }
 
-module.exports = GeoJSONWrapper;
+export default GeoJSONWrapper;

@@ -244,4 +244,4 @@ class LngLatBounds {
  */
 export type LngLatBoundsLike = LngLatBounds | [LngLatLike, LngLatLike] | [number, number, number, number];
 
-module.exports = LngLatBounds;
+export default LngLatBounds;

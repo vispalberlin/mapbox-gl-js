@@ -82,4 +82,4 @@ class DoubleClickZoomHandler {
     }
 }
 
-module.exports = DoubleClickZoomHandler;
+export default DoubleClickZoomHandler;

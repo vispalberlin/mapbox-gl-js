@@ -7,7 +7,7 @@ import unbundle from '../util/unbundle_jsonlint';
 import extend from '../util/extend';
 import { isExpressionFilter } from '../feature_filter';
 
-module.exports = function validateFilter(options) {
+export default function validateFilter(options) {
     if (isExpressionFilter(unbundle.deep(options.value))) {
         return validateExpression(extend({}, options, {
             expressionContext: 'filter',

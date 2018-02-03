@@ -160,4 +160,4 @@ class VertexArrayObject {
     }
 }
 
-module.exports = VertexArrayObject;
+export default VertexArrayObject;

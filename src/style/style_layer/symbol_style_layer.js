@@ -78,4 +78,4 @@ class SymbolStyleLayer extends StyleLayer {
     }
 }
 
-module.exports = SymbolStyleLayer;
+export default SymbolStyleLayer;

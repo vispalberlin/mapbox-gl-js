@@ -10,7 +10,7 @@ import type {StyleImage} from './style_image';
 import type {RequestTransformFunction} from '../ui/map';
 import type {Callback} from '../types/callback';
 
-module.exports = function(baseURL: string,
+export default function(baseURL: string,
                           transformRequestCallback: RequestTransformFunction,
                           callback: Callback<{[string]: StyleImage}>) {
     let json: any, image, error;

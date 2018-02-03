@@ -14,4 +14,4 @@ class HeatmapBucket extends CircleBucket<HeatmapStyleLayer> {
 
 register('HeatmapBucket', HeatmapBucket, {omit: ['layers']});
 
-module.exports = HeatmapBucket;
+export default HeatmapBucket;

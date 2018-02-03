@@ -190,6 +190,6 @@ class Worker {
     }
 }
 
-module.exports = function createWorker(self: WorkerGlobalScopeInterface) {
+export default function createWorker(self: WorkerGlobalScopeInterface) {
     return new Worker(self);
 };

@@ -234,4 +234,4 @@ class TouchZoomRotateHandler {
     }
 }
 
-module.exports = TouchZoomRotateHandler;
+export default TouchZoomRotateHandler;

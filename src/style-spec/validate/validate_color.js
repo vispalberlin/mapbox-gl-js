@@ -3,7 +3,7 @@ import ValidationError from '../error/validation_error';
 import getType from '../util/get_type';
 import { parseCSSColor } from 'csscolorparser';
 
-module.exports = function validateColor(options) {
+export default function validateColor(options) {
     const key = options.key;
     const value = options.value;
     const type = getType(value);

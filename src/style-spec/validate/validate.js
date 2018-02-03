@@ -14,7 +14,7 @@ import { isFunction } from '../function';
 // - valueSpec: current spec being evaluated. Tracks value.
 // - styleSpec: current full spec being evaluated.
 
-module.exports = function validate(options) {
+export default function validate(options) {
 
     const validateFunction = require('./validate_function');
     const validateExpression = require('./validate_expression');

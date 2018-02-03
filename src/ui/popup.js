@@ -367,4 +367,4 @@ function normalizeOffset(offset: ?Offset) {
     }
 }
 
-module.exports = Popup;
+export default Popup;

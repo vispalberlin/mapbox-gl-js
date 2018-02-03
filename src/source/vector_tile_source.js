@@ -155,4 +155,4 @@ class VectorTileSource extends Evented implements Source {
     }
 }
 
-module.exports = VectorTileSource;
+export default VectorTileSource;

@@ -10,10 +10,13 @@ import type SymbolStyleLayer from '../style/style_layer/symbol_style_layer';
 import type {Feature} from '../style-spec/expression';
 import type {GlyphPosition} from '../render/glyph_atlas';
 
-module.exports = {
+const exported = {
     getIconQuads,
     getGlyphQuads
 };
+
+export default exported;
+export { getIconQuads, getGlyphQuads };
 
 /**
  * A textured quad for rendering a single icon or glyph.

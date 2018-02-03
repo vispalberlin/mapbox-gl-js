@@ -17,4 +17,4 @@ class BackgroundStyleLayer extends StyleLayer {
     }
 }
 
-module.exports = BackgroundStyleLayer;
+export default BackgroundStyleLayer;

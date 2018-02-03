@@ -128,4 +128,4 @@ class LngLat {
  */
 export type LngLatLike = LngLat | {lng: number, lat: number} | [number, number];
 
-module.exports = LngLat;
+export default LngLat;

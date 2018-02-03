@@ -12,7 +12,7 @@ import type SourceCache from '../source/source_cache';
 import type HillshadeStyleLayer from '../style/style_layer/hillshade_style_layer';
 import type {OverscaledTileID} from '../source/tile_id';
 
-module.exports = drawHillshade;
+export default drawHillshade;
 
 function drawHillshade(painter: Painter, sourceCache: SourceCache, layer: HillshadeStyleLayer, tileIDs: Array<OverscaledTileID>) {
     if (painter.renderPass !== 'offscreen' && painter.renderPass !== 'translucent') return;

@@ -23,4 +23,4 @@ class Anchor extends Point {
 
 register('Anchor', Anchor);
 
-module.exports = Anchor;
+export default Anchor;

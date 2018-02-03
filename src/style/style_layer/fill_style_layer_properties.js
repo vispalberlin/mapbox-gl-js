@@ -29,4 +29,9 @@ const paint: Properties<PaintProps> = new Properties({
     "fill-pattern": new CrossFadedProperty(styleSpec["paint_fill"]["fill-pattern"]),
 });
 
-module.exports = { paint };
+const exported = {
+    paint
+};
+
+export default exported;
+export { paint };

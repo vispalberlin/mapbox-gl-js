@@ -159,8 +159,11 @@ function getQuadkey(z, x, y) {
 register('CanonicalTileID', CanonicalTileID);
 register('OverscaledTileID', OverscaledTileID, {omit: ['posMatrix']});
 
-module.exports = {
+const exported = {
     CanonicalTileID: CanonicalTileID,
     OverscaledTileID: OverscaledTileID,
     UnwrappedTileID: UnwrappedTileID
 };
+
+export default exported;
+export { CanonicalTileID, OverscaledTileID, UnwrappedTileID };

@@ -7,7 +7,7 @@ import validateArray from './validate_array';
 import validateNumber from './validate_number';
 import unbundle from '../util/unbundle_jsonlint';
 
-module.exports = function validateFunction(options) {
+export default function validateFunction(options) {
     const functionValueSpec = options.valueSpec;
     const functionType = unbundle(options.value.type);
     let stopKeyType;

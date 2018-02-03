@@ -630,7 +630,7 @@ class DepthAttachment extends FramebufferValue<?WebGLRenderbuffer> implements Va
     }
 }
 
-module.exports = {
+const exported = {
     ClearColor,
     ClearDepth,
     ClearStencil,
@@ -658,7 +658,9 @@ module.exports = {
     BindVertexArrayOES,
     PixelStoreUnpack,
     PixelStoreUnpackPremultiplyAlpha,
-
     ColorAttachment,
-    DepthAttachment,
+    DepthAttachment
 };
+
+export default exported;
+export { ClearColor, ClearDepth, ClearStencil, ColorMask, DepthMask, StencilMask, StencilFunc, StencilOp, StencilTest, DepthRange, DepthTest, DepthFunc, Blend, BlendFunc, BlendColor, Program, LineWidth, ActiveTextureUnit, Viewport, BindFramebuffer, BindRenderbuffer, BindTexture, BindVertexBuffer, BindElementBuffer, BindVertexArrayOES, PixelStoreUnpack, PixelStoreUnpackPremultiplyAlpha, ColorAttachment, DepthAttachment };

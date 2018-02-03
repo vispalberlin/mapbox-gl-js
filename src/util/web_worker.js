@@ -67,7 +67,7 @@ class MessageBus implements WorkerInterface, WorkerGlobalScopeInterface {
     importScripts() {}
 }
 
-module.exports = function (): WorkerInterface {
+export default function (): WorkerInterface {
     const parentListeners = [],
         workerListeners = [],
         parentBus = new MessageBus(workerListeners, parentListeners),

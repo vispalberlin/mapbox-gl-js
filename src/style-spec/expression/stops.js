@@ -35,4 +35,9 @@ function findStopLessThanOrEqualTo(stops: Array<number>, input: number) {
     return Math.max(currentIndex - 1, 0);
 }
 
-module.exports = {findStopLessThanOrEqualTo};
+const exported = {
+    findStopLessThanOrEqualTo
+};
+
+export default exported;
+export { findStopLessThanOrEqualTo };

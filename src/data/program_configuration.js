@@ -421,7 +421,10 @@ register('CompositeExpressionBinder', CompositeExpressionBinder);
 register('ProgramConfiguration', ProgramConfiguration, {omit: ['_buffers']});
 register('ProgramConfigurationSet', ProgramConfigurationSet);
 
-module.exports = {
+const exported = {
     ProgramConfiguration,
     ProgramConfigurationSet
 };
+
+export default exported;
+export { ProgramConfiguration, ProgramConfigurationSet };

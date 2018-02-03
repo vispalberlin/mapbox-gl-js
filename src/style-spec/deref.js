@@ -19,7 +19,7 @@ function deref(layer, parent) {
     return result;
 }
 
-module.exports = derefLayers;
+export default derefLayers;
 
 /**
  * Given an array of layers, some of which may contain `ref` properties

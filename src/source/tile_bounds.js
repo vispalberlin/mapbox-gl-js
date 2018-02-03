@@ -45,4 +45,4 @@ class TileBounds {
     }
 }
 
-module.exports = TileBounds;
+export default TileBounds;

@@ -153,4 +153,4 @@ class FillBucket implements Bucket {
 
 register('FillBucket', FillBucket, {omit: ['layers']});
 
-module.exports = FillBucket;
+export default FillBucket;

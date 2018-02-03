@@ -9,7 +9,7 @@ import pixelsToTileUnits from '../source/pixels_to_tile_units';
 import DepthMode from '../gl/depth_mode';
 import StencilMode from '../gl/stencil_mode';
 
-module.exports = drawCollisionDebug;
+export default drawCollisionDebug;
 
 function drawCollisionDebugGeometry(painter: Painter, sourceCache: SourceCache, layer: StyleLayer, coords: Array<OverscaledTileID>, drawCircles: boolean) {
     const context = painter.context;

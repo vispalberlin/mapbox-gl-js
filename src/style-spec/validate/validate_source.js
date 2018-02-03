@@ -4,7 +4,7 @@ import unbundle from '../util/unbundle_jsonlint';
 import validateObject from './validate_object';
 import validateEnum from './validate_enum';
 
-module.exports = function validateSource(options) {
+export default function validateSource(options) {
     const value = options.value;
     const key = options.key;
     const styleSpec = options.styleSpec;

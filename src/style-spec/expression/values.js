@@ -92,9 +92,12 @@ function typeOf(value: Value): Type {
     }
 }
 
-module.exports = {
+const exported = {
     Color,
     validateRGBA,
     isValue,
     typeOf
 };
+
+export default exported;
+export { Color, validateRGBA, isValue, typeOf };

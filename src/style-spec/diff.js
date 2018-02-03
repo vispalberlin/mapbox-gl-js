@@ -389,5 +389,5 @@ function diffStyles(before, after) {
     return commands;
 }
 
-module.exports = diffStyles;
-module.exports.operations = operations;
+export default diffStyles;
+export { operations };

@@ -672,7 +672,7 @@ register('DataConstantProperty', DataConstantProperty);
 register('CrossFadedProperty', CrossFadedProperty);
 register('HeatmapColorProperty', HeatmapColorProperty);
 
-module.exports = {
+const exported = {
     PropertyValue,
     Transitionable,
     Transitioning,
@@ -685,3 +685,6 @@ module.exports = {
     HeatmapColorProperty,
     Properties
 };
+
+export default exported;
+export { PropertyValue, Transitionable, Transitioning, Layout, PossiblyEvaluatedPropertyValue, PossiblyEvaluated, DataConstantProperty, DataDrivenProperty, CrossFadedProperty, HeatmapColorProperty, Properties };

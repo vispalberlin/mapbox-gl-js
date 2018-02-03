@@ -70,4 +70,4 @@ class LogoControl {
 }
 
 
-module.exports = LogoControl;
+export default LogoControl;

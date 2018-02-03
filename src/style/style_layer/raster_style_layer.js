@@ -17,4 +17,4 @@ class RasterStyleLayer extends StyleLayer {
     }
 }
 
-module.exports = RasterStyleLayer;
+export default RasterStyleLayer;

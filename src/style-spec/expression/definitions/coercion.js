@@ -95,4 +95,4 @@ class Coercion implements Expression {
     }
 }
 
-module.exports = Coercion;
+export default Coercion;

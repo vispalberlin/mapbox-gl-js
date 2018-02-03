@@ -238,4 +238,4 @@ class ImageSource extends Evented implements Source {
     }
 }
 
-module.exports = ImageSource;
+export default ImageSource;

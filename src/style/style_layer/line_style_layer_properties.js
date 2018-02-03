@@ -48,4 +48,10 @@ const paint: Properties<PaintProps> = new Properties({
     "line-pattern": new CrossFadedProperty(styleSpec["paint_line"]["line-pattern"]),
 });
 
-module.exports = { paint, layout };
+const exported = {
+    paint,
+    layout
+};
+
+export default exported;
+export { paint, layout };

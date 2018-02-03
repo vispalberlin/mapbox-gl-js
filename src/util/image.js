@@ -127,7 +127,10 @@ class RGBAImage {
 register('AlphaImage', AlphaImage);
 register('RGBAImage', RGBAImage);
 
-module.exports = {
+const exported = {
     AlphaImage,
     RGBAImage
 };
+
+export default exported;
+export { AlphaImage, RGBAImage };

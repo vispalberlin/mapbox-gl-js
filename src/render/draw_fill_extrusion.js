@@ -17,7 +17,7 @@ import type FillExtrusionStyleLayer from '../style/style_layer/fill_extrusion_st
 import type FillExtrusionBucket from '../data/bucket/fill_extrusion_bucket';
 import type {OverscaledTileID} from '../source/tile_id';
 
-module.exports = draw;
+export default draw;
 
 function draw(painter: Painter, source: SourceCache, layer: FillExtrusionStyleLayer, coords: Array<OverscaledTileID>) {
     if (layer.paint.get('fill-extrusion-opacity') === 0) {

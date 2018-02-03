@@ -275,4 +275,4 @@ class DragRotateHandler {
     }
 }
 
-module.exports = DragRotateHandler;
+export default DragRotateHandler;

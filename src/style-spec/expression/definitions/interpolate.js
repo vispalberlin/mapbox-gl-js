@@ -228,4 +228,4 @@ function exponentialInterpolation(input, base, lowerValue, upperValue) {
     }
 }
 
-module.exports = Interpolate;
+export default Interpolate;

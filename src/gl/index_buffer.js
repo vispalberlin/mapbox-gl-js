@@ -59,4 +59,4 @@ class IndexBuffer {
     }
 }
 
-module.exports = IndexBuffer;
+export default IndexBuffer;

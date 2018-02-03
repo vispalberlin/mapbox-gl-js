@@ -11,7 +11,7 @@ import type CircleStyleLayer from '../style/style_layer/circle_style_layer';
 import type CircleBucket from '../data/bucket/circle_bucket';
 import type {OverscaledTileID} from '../source/tile_id';
 
-module.exports = drawCircles;
+export default drawCircles;
 
 function drawCircles(painter: Painter, sourceCache: SourceCache, layer: CircleStyleLayer, coords: Array<OverscaledTileID>) {
     if (painter.renderPass !== 'translucent') return;

@@ -52,4 +52,4 @@ class EvaluationContext {
     }
 }
 
-module.exports = EvaluationContext;
+export default EvaluationContext;

@@ -70,4 +70,4 @@ class StyleLayerIndex {
     }
 }
 
-module.exports = StyleLayerIndex;
+export default StyleLayerIndex;

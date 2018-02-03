@@ -17,7 +17,7 @@ import type SymbolStyleLayer from '../style/style_layer/symbol_style_layer';
 import type SymbolBucket from '../data/bucket/symbol_bucket';
 import type {OverscaledTileID} from '../source/tile_id';
 
-module.exports = drawSymbols;
+export default drawSymbols;
 
 function drawSymbols(painter: Painter, sourceCache: SourceCache, layer: SymbolStyleLayer, coords: Array<OverscaledTileID>) {
     if (painter.renderPass !== 'translucent') return;

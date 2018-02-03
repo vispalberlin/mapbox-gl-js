@@ -17,7 +17,7 @@ import type {
 } from '../data/array_types';
 import { WritingMode } from '../symbol/shaping';
 
-module.exports = {
+const exported = {
     updateLineLabels,
     getLabelPlaneMatrix,
     getGlCoordMatrix,
@@ -25,6 +25,9 @@ module.exports = {
     placeFirstAndLastGlyph,
     xyTransformMat4
 };
+
+export default exported;
+export { updateLineLabels, getLabelPlaneMatrix, getGlCoordMatrix, project, placeFirstAndLastGlyph, xyTransformMat4 };
 
 /*
  * # Overview of coordinate spaces

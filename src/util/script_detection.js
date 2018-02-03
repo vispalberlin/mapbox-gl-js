@@ -4,28 +4,28 @@
 
 import isChar from './is_char_in_unicode_block';
 
-module.exports.allowsIdeographicBreaking = function(chars: string) {
+export const allowsIdeographicBreaking = function(chars: string) {
     for (const char of chars) {
-        if (!exports.charAllowsIdeographicBreaking(char.charCodeAt(0))) return false;
+        if (!charAllowsIdeographicBreaking(char.charCodeAt(0))) return false;
     }
     return true;
 };
 
-module.exports.allowsVerticalWritingMode = function(chars: string) {
+export const allowsVerticalWritingMode = function(chars: string) {
     for (const char of chars) {
-        if (exports.charHasUprightVerticalOrientation(char.charCodeAt(0))) return true;
+        if (charHasUprightVerticalOrientation(char.charCodeAt(0))) return true;
     }
     return false;
 };
 
-module.exports.allowsLetterSpacing = function(chars: string) {
+export const allowsLetterSpacing = function(chars: string) {
     for (const char of chars) {
-        if (!exports.charAllowsLetterSpacing(char.charCodeAt(0))) return false;
+        if (!charAllowsLetterSpacing(char.charCodeAt(0))) return false;
     }
     return true;
 };
 
-module.exports.charAllowsLetterSpacing = function(char: number) {
+export const charAllowsLetterSpacing = function(char: number) {
     if (isChar['Arabic'](char)) return false;
     if (isChar['Arabic Supplement'](char)) return false;
     if (isChar['Arabic Extended-A'](char)) return false;
@@ -35,7 +35,7 @@ module.exports.charAllowsLetterSpacing = function(char: number) {
     return true;
 };
 
-module.exports.charAllowsIdeographicBreaking = function(char: number) {
+export const charAllowsIdeographicBreaking = function(char: number) {
     // Return early for characters outside all ideographic ranges.
     if (char < 0x2E80) return false;
 
@@ -82,7 +82,7 @@ module.exports.charAllowsIdeographicBreaking = function(char: number) {
  * always drawn upright. An uprightly oriented character causes an adjacent
  * “neutral” character to be drawn upright as well.
  */
-exports.charHasUprightVerticalOrientation = function(char: number) {
+export const charHasUprightVerticalOrientation = function(char: number) {
     if (char === 0x02EA /* modifier letter yin departing tone mark */ ||
         char === 0x02EB /* modifier letter yang departing tone mark */) {
         return true;
@@ -169,7 +169,7 @@ exports.charHasUprightVerticalOrientation = function(char: number) {
  * letters. A neutrally oriented character does not influence whether an
  * adjacent character is drawn upright or rotated.
  */
-exports.charHasNeutralVerticalOrientation = function(char: number) {
+export const charHasNeutralVerticalOrientation = function(char: number) {
     if (isChar['Latin-1 Supplement'](char)) {
         if (char === 0x00A7 /* section sign */ ||
             char === 0x00A9 /* copyright sign */ ||
@@ -259,7 +259,7 @@ exports.charHasNeutralVerticalOrientation = function(char: number) {
  * example, a Latin letter is drawn rotated along a vertical line. A rotated
  * character causes an adjacent “neutral” character to be drawn rotated as well.
  */
-exports.charHasRotatedVerticalOrientation = function(char: number) {
-    return !(exports.charHasUprightVerticalOrientation(char) ||
-             exports.charHasNeutralVerticalOrientation(char));
+export const charHasRotatedVerticalOrientation = function(char: number) {
+    return !(charHasUprightVerticalOrientation(char) ||
+             charHasNeutralVerticalOrientation(char));
 };

@@ -115,4 +115,4 @@ class VertexBuffer {
     }
 }
 
-module.exports = VertexBuffer;
+export default VertexBuffer;

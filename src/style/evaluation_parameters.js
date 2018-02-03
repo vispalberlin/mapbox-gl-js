@@ -34,4 +34,4 @@ class EvaluationParameters {
     }
 }
 
-module.exports = EvaluationParameters;
+export default EvaluationParameters;

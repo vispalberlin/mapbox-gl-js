@@ -319,4 +319,4 @@ class Marker {
     }
 }
 
-module.exports = Marker;
+export default Marker;

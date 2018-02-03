@@ -71,6 +71,9 @@ function makeGlyphAtlas(stacks: {[string]: {[number]: ?StyleGlyph}}): GlyphAtlas
     return {image, positions};
 }
 
-module.exports = {
+const exported = {
     makeGlyphAtlas
 };
+
+export default exported;
+export { makeGlyphAtlas };

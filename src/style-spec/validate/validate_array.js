@@ -3,7 +3,7 @@ import getType from '../util/get_type';
 import validate from './validate';
 import ValidationError from '../error/validation_error';
 
-module.exports = function validateArray(options) {
+export default function validateArray(options) {
     const array = options.value;
     const arraySpec = options.valueSpec;
     const style = options.style;

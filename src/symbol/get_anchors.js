@@ -8,7 +8,7 @@ import checkMaxAngle from './check_max_angle';
 import type Point from '@mapbox/point-geometry';
 import type {Shaping, PositionedIcon} from './shaping';
 
-module.exports = getAnchors;
+export default getAnchors;
 
 function getAnchors(line: Array<Point>,
                     spacing: number,

@@ -118,4 +118,4 @@ class Light extends Evented {
     }
 }
 
-module.exports = Light;
+export default Light;

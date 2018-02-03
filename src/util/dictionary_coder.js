@@ -27,4 +27,4 @@ class DictionaryCoder {
     }
 }
 
-module.exports = DictionaryCoder;
+export default DictionaryCoder;

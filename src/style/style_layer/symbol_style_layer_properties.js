@@ -120,4 +120,10 @@ const paint: Properties<PaintProps> = new Properties({
     "text-translate-anchor": new DataConstantProperty(styleSpec["paint_symbol"]["text-translate-anchor"]),
 });
 
-module.exports = { paint, layout };
+const exported = {
+    paint,
+    layout
+};
+
+export default exported;
+export { paint, layout };

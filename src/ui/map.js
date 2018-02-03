@@ -1661,7 +1661,7 @@ class Map extends Camera {
     }
 }
 
-module.exports = Map;
+export default Map;
 
 function removeNode(node) {
     if (node.parentNode) {

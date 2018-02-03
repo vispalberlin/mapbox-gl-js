@@ -278,7 +278,10 @@ function interpolationFactor(input, base, lowerValue, upperValue) {
     }
 }
 
-module.exports = {
+const exported = {
     createFunction,
     isFunction
 };
+
+export default exported;
+export { createFunction, isFunction };

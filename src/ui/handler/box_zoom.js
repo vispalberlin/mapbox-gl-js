@@ -167,4 +167,4 @@ class BoxZoomHandler {
     }
 }
 
-module.exports = BoxZoomHandler;
+export default BoxZoomHandler;

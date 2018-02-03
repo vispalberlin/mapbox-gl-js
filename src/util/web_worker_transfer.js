@@ -239,8 +239,11 @@ function deserialize(input: Serialized): mixed {
     throw new Error(`can't deserialize object of type ${typeof input}`);
 }
 
-module.exports = {
+const exported = {
     register,
     serialize,
     deserialize
 };
+
+export default exported;
+export { register, serialize, deserialize };

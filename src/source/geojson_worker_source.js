@@ -271,4 +271,4 @@ class GeoJSONWorkerSource extends VectorTileWorkerSource {
     }
 }
 
-module.exports = GeoJSONWorkerSource;
+export default GeoJSONWorkerSource;

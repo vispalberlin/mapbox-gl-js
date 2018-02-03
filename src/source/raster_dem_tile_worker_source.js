@@ -42,4 +42,4 @@ class RasterDEMTileWorkerSource {
     }
 }
 
-module.exports = RasterDEMTileWorkerSource;
+export default RasterDEMTileWorkerSource;

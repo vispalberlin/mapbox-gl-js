@@ -59,4 +59,4 @@ class At implements Expression {
     }
 }
 
-module.exports = At;
+export default At;

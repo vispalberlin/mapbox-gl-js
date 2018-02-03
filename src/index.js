@@ -20,43 +20,41 @@ import Evented from './util/evented';
 import config from './util/config';
 import rtlTextPlugin from './source/rtl_text_plugin';
 
-module.exports = {
-    version,
-    supported,
+const exported = {
+ version,
+ supported,
+ workerCount: Math.max(Math.floor(browser.hardwareConcurrency / 2), 1),
+ setRTLTextPlugin: rtlTextPlugin.setRTLTextPlugin,
+ Map,
+ NavigationControl,
+ GeolocateControl,
+ AttributionControl,
+ ScaleControl,
+ FullscreenControl,
+ Popup,
+ Marker,
+ Style,
+ LngLat,
+ LngLatBounds,
+ Point,
+ Evented,
+ config,
 
-    workerCount: Math.max(Math.floor(browser.hardwareConcurrency / 2), 1),
-    setRTLTextPlugin: rtlTextPlugin.setRTLTextPlugin,
+ /**
+  * Gets and sets the map's [access token](https://www.mapbox.com/help/define-access-token/).
+  *
+  * @var {string} accessToken
+  * @example
+  * mapboxgl.accessToken = myAccessToken;
+  * @see [Display a map](https://www.mapbox.com/mapbox-gl-js/examples/)
+  */
+ get accessToken() {
+     return config.ACCESS_TOKEN;
+ },
 
-    Map,
-    NavigationControl,
-    GeolocateControl,
-    AttributionControl,
-    ScaleControl,
-    FullscreenControl,
-    Popup,
-    Marker,
-    Style,
-    LngLat,
-    LngLatBounds,
-    Point,
-    Evented,
-    config,
-
-    /**
-     * Gets and sets the map's [access token](https://www.mapbox.com/help/define-access-token/).
-     *
-     * @var {string} accessToken
-     * @example
-     * mapboxgl.accessToken = myAccessToken;
-     * @see [Display a map](https://www.mapbox.com/mapbox-gl-js/examples/)
-     */
-    get accessToken() {
-        return config.ACCESS_TOKEN;
-    },
-
-    set accessToken(token: string) {
-        config.ACCESS_TOKEN = token;
-    }
+ set accessToken(token: string) {
+     config.ACCESS_TOKEN = token;
+ }
 };
 
 /**
@@ -91,3 +89,13 @@ module.exports = {
  * mapboxgl.setRTLTextPlugin('https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.1.1/mapbox-gl-rtl-text.js');
  * @see [Add support for right-to-left scripts](https://www.mapbox.com/mapbox-gl-js/example/mapbox-gl-rtl-text/)
  */
+
+export default exported;
+export { version, supported, Map, NavigationControl, GeolocateControl, AttributionControl, ScaleControl, FullscreenControl, Popup, Marker, Style, LngLat, LngLatBounds, Point, Evented, config };
+
+export const {
+ workerCount,
+ setRTLTextPlugin,
+ accessToken,
+ accessToken
+} = exported;

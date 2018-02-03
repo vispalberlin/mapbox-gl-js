@@ -51,4 +51,4 @@ function format(style, space) {
     return JSON.stringify(style, null, space);
 }
 
-module.exports = format;
+export default format;

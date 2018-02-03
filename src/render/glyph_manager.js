@@ -151,4 +151,4 @@ class GlyphManager {
     }
 }
 
-module.exports = GlyphManager;
+export default GlyphManager;

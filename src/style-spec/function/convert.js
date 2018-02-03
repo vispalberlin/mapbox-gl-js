@@ -6,7 +6,7 @@ import extend from '../util/extend';
 
 import type {StylePropertySpecification} from '../style-spec';
 
-module.exports = convertFunction;
+export default convertFunction;
 
 function convertFunction(parameters: PropertyValueSpecification<any>, propertySpec: StylePropertySpecification) {
     let expression;

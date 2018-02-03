@@ -690,4 +690,9 @@ SymbolBucket.MAX_GLYPHS = 65535;
 
 SymbolBucket.addDynamicAttributes = addDynamicAttributes;
 
-module.exports = SymbolBucket;
+export default SymbolBucket;
+export { addDynamicAttributes };
+
+export const {
+    MAX_GLYPHS
+} = SymbolBucket;

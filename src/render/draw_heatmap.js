@@ -15,7 +15,7 @@ import type HeatmapStyleLayer from '../style/style_layer/heatmap_style_layer';
 import type HeatmapBucket from '../data/bucket/heatmap_bucket';
 import type {OverscaledTileID} from '../source/tile_id';
 
-module.exports = drawHeatmap;
+export default drawHeatmap;
 
 function drawHeatmap(painter: Painter, sourceCache: SourceCache, layer: HeatmapStyleLayer, coords: Array<OverscaledTileID>) {
     if (layer.paint.get('heatmap-opacity') === 0) {

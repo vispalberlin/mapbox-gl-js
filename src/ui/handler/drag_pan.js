@@ -253,4 +253,4 @@ class DragPanHandler {
     }
 }
 
-module.exports = DragPanHandler;
+export default DragPanHandler;

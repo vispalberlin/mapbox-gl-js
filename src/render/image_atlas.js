@@ -96,7 +96,10 @@ function makeImageAtlas(images: {[string]: StyleImage}): ImageAtlas {
     return {image, positions};
 }
 
-module.exports = {
+const exported = {
     imagePosition,
     makeImageAtlas
 };
+
+export default exported;
+export { imagePosition, makeImageAtlas };

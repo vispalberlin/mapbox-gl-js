@@ -1,6 +1,6 @@
 
 import validateProperty from './validate_property';
 
-module.exports = function validatePaintProperty(options) {
+export default function validatePaintProperty(options) {
     return validateProperty(options, 'paint');
 };

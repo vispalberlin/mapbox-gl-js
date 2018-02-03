@@ -52,4 +52,4 @@ class FillStyleLayer extends StyleLayer {
     }
 }
 
-module.exports = FillStyleLayer;
+export default FillStyleLayer;

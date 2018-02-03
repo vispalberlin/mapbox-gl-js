@@ -152,4 +152,4 @@ class LineAtlas {
     }
 }
 
-module.exports = LineAtlas;
+export default LineAtlas;

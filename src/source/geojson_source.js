@@ -290,4 +290,4 @@ function resolveURL(url) {
     return a.href;
 }
 
-module.exports = GeoJSONSource;
+export default GeoJSONSource;

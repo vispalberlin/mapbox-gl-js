@@ -97,4 +97,4 @@ class Hash {
 
 }
 
-module.exports = Hash;
+export default Hash;

@@ -297,7 +297,7 @@ function normalizePropertyExpression<T>(value: PropertyValueSpecification<T>, sp
     }
 }
 
-module.exports = {
+const exported = {
     StyleExpression,
     StyleExpressionWithErrorHandling,
     isExpression,
@@ -308,6 +308,9 @@ module.exports = {
     ZoomDependentExpression,
     StylePropertyFunction
 };
+
+export default exported;
+export { StyleExpression, StyleExpressionWithErrorHandling, isExpression, createExpression, createPropertyExpression, normalizePropertyExpression, ZoomConstantExpression, ZoomDependentExpression, StylePropertyFunction };
 
 // Zoom-dependent expressions may only use ["zoom"] as the input to a top-level "step" or "interpolate"
 // expression (collectively referred to as a "curve"). The curve may be wrapped in one or more "let" or

@@ -77,7 +77,14 @@ function makeComparison(compare) {
     };
 }
 
-module.exports = {
+const exported = {
     Equals: makeComparison((lhs, rhs) => lhs === rhs),
     NotEquals: makeComparison((lhs, rhs) => lhs !== rhs)
 };
+
+export default exported;
+
+export const {
+    Equals,
+    NotEquals
+} = exported;

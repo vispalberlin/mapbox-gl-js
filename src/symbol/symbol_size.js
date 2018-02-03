@@ -8,11 +8,14 @@ import util from '../util/util';
 import type {Property, PropertyValue, PossiblyEvaluatedPropertyValue} from '../style/properties';
 import type {CameraExpression, CompositeExpression} from '../style-spec/expression/index';
 
-module.exports = {
+const exported = {
     getSizeData,
     evaluateSizeForFeature,
     evaluateSizeForZoom
 };
+
+export default exported;
+export { getSizeData, evaluateSizeForFeature, evaluateSizeForZoom };
 
 export type SizeData = {
     functionType: 'constant',

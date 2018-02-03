@@ -146,8 +146,11 @@ function stringifySignature(signature: Signature): string {
     }
 }
 
-module.exports = {
+const exported = {
     CompoundExpression,
     varargs
 };
+
+export default exported;
+export { CompoundExpression, varargs };
 

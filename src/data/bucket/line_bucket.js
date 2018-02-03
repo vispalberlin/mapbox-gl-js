@@ -511,4 +511,4 @@ class LineBucket implements Bucket {
 
 register('LineBucket', LineBucket, {omit: ['layers']});
 
-module.exports = LineBucket;
+export default LineBucket;

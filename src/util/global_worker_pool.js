@@ -9,7 +9,7 @@ let globalWorkerPool;
  * to be shared across each Map
  * @private
  */
-module.exports = function getGlobalWorkerPool () {
+export default function getGlobalWorkerPool () {
     if (!globalWorkerPool) {
         globalWorkerPool = new WorkerPool();
     }

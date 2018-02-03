@@ -86,4 +86,14 @@ const symbolAttributes: {[string]: StructArrayLayout} = {
     ])
 };
 
-module.exports = symbolAttributes;
+export default symbolAttributes;
+export { symbolLayoutAttributes, dynamicLayoutAttributes, placementOpacityAttributes, collisionVertexAttributes };
+
+export const {
+    collisionBox,
+    collisionBoxLayout,
+    collisionCircleLayout,
+    placement,
+    glyphOffset,
+    lineVertex
+} = symbolAttributes;

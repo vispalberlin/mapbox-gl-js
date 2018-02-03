@@ -202,7 +202,7 @@ class FillExtrusionBucket implements Bucket {
 
 register('FillExtrusionBucket', FillExtrusionBucket, {omit: ['layers']});
 
-module.exports = FillExtrusionBucket;
+export default FillExtrusionBucket;
 
 function isBoundaryEdge(p1, p2) {
     return (p1.x === p2.x && (p1.x < 0 || p1.x > EXTENT)) ||

@@ -28,9 +28,12 @@ import type {PossiblyEvaluatedPropertyValue} from '../style/properties';
 
 import Point from '@mapbox/point-geometry';
 
-module.exports = {
+const exported = {
     performSymbolLayout
 };
+
+export default exported;
+export { performSymbolLayout };
 
 // The symbol layout process needs `text-size` evaluated at up to five different zoom levels, and
 // `icon-size` at up to three:

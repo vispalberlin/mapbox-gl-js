@@ -1,6 +1,6 @@
 
 import validateProperty from './validate_property';
 
-module.exports = function validateLayoutProperty(options) {
+export default function validateLayoutProperty(options) {
     return validateProperty(options, 'layout');
 };

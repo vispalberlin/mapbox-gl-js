@@ -4,7 +4,7 @@ import Coordinate from '../geo/coordinate';
 
 import { OverscaledTileID } from '../source/tile_id';
 
-module.exports = tileCover;
+export default tileCover;
 
 function tileCover(z: number, bounds: [Coordinate, Coordinate, Coordinate, Coordinate],
         actualZ: number, renderWorldCopies: boolean | void) {

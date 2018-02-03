@@ -145,5 +145,12 @@ class DEMData {
 }
 
 register('DEMData', DEMData);
-module.exports = {DEMData, Level};
+
+const exported = {
+    DEMData,
+    Level
+};
+
+export default exported;
+export { DEMData, Level };
 

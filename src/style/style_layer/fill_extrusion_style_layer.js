@@ -56,4 +56,4 @@ class FillExtrusionStyleLayer extends StyleLayer {
     }
 }
 
-module.exports = FillExtrusionStyleLayer;
+export default FillExtrusionStyleLayer;

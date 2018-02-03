@@ -21,4 +21,4 @@ class HillshadeStyleLayer extends StyleLayer {
     }
 }
 
-module.exports = HillshadeStyleLayer;
+export default HillshadeStyleLayer;

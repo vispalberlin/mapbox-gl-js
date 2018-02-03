@@ -285,4 +285,4 @@ class ScrollZoomHandler {
     }
 }
 
-module.exports = ScrollZoomHandler;
+export default ScrollZoomHandler;

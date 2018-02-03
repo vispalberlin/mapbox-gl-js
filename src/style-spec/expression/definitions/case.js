@@ -78,4 +78,4 @@ class Case implements Expression {
     }
 }
 
-module.exports = Case;
+export default Case;

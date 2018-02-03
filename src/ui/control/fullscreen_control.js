@@ -120,4 +120,4 @@ class FullscreenControl {
     }
 }
 
-module.exports = FullscreenControl;
+export default FullscreenControl;

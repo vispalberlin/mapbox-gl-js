@@ -80,4 +80,10 @@ Color.black = new Color(0, 0, 0, 1);
 Color.white = new Color(1, 1, 1, 1);
 Color.transparent = new Color(0, 0, 0, 0);
 
-module.exports = Color;
+export default Color;
+
+export const {
+    black,
+    white,
+    transparent
+} = Color;

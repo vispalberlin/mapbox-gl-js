@@ -192,4 +192,4 @@ class CanvasSource extends ImageSource {
     }
 }
 
-module.exports = CanvasSource;
+export default CanvasSource;

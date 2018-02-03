@@ -776,4 +776,9 @@ function isRasterType(type) {
     return type === 'raster' || type === 'image' || type === 'video';
 }
 
-module.exports = SourceCache;
+export default SourceCache;
+
+export const {
+    maxOverzooming,
+    maxUnderzooming
+} = SourceCache;

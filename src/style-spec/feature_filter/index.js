@@ -5,8 +5,8 @@ import { createExpression } from '../expression';
 import type {GlobalProperties} from '../expression';
 export type FeatureFilter = (globalProperties: GlobalProperties, feature: VectorTileFeature) => boolean;
 
-module.exports = createFilter;
-module.exports.isExpressionFilter = isExpressionFilter;
+export default createFilter;
+export { isExpressionFilter };
 
 function isExpressionFilter(filter) {
     if (!Array.isArray(filter) || filter.length === 0) {

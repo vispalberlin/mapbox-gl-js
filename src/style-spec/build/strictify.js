@@ -1,7 +1,7 @@
 import through from 'through2';
 import path from 'path';
 
-module.exports = (file) => {
+export default (file) => {
     if (path.extname(file) === '.json') {
         return through();
     }

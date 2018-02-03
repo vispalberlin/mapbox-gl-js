@@ -157,4 +157,4 @@ function easeOut(t) {
     return t * (2 - t);
 }
 
-module.exports = KeyboardHandler;
+export default KeyboardHandler;

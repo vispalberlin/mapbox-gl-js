@@ -54,7 +54,7 @@ class SegmentVector {
 
 register('SegmentVector', SegmentVector);
 
-module.exports = {
+const exported = {
     SegmentVector,
 
     /**
@@ -65,3 +65,6 @@ module.exports = {
      */
     MAX_VERTEX_ARRAY_LENGTH: MAX_VERTEX_ARRAY_LENGTH
 };
+
+export default exported;
+export { SegmentVector, MAX_VERTEX_ARRAY_LENGTH };

@@ -3,7 +3,7 @@ import ValidationError from '../error/validation_error';
 import getType from '../util/get_type';
 import validate from './validate';
 
-module.exports = function validateLight(options) {
+export default function validateLight(options) {
     const light = options.value;
     const styleSpec = options.styleSpec;
     const lightSpec = styleSpec.light;

@@ -5,7 +5,7 @@ import ValidationError from '../error/validation_error';
 import { createExpression, createPropertyExpression } from '../expression';
 import unbundle from '../util/unbundle_jsonlint';
 
-module.exports = function validateExpression(options: any) {
+export default function validateExpression(options: any) {
     const expression = (options.expressionContext === 'property' ? createPropertyExpression : createExpression)(unbundle.deep(options.value), options.valueSpec);
     if (expression.result === 'error') {
         return expression.value.map((error) => {

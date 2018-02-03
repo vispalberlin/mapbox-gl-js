@@ -68,4 +68,4 @@ class Coalesce implements Expression {
     }
 }
 
-module.exports = Coalesce;
+export default Coalesce;
