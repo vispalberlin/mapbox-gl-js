@@ -18,15 +18,23 @@ class LayerPlacement {
     }
 
     continuePlacement(tiles: Array<Tile>, placement: Placement, showCollisionBoxes: boolean, styleLayer: StyleLayer, shouldPausePlacement) {
+        const start = performance.now();
         while (this._currentTileIndex < tiles.length) {
             const tile = tiles[this._currentTileIndex];
+            const startPlacement = performance.now();
             placement.placeLayerTile(styleLayer, tile, showCollisionBoxes, this._seenCrossTileIDs);
-
+            const endPlacement = performance.now();
+            console.log(`...Placement#placeLayerTile ${endPlacement - startPlacement}`)
             this._currentTileIndex++;
+            const startCheckShouldPause = performance.now();
             if (shouldPausePlacement()) {
+                const end = performance.now();
+                console.log(`...check shouldPausePlacement ${end - startCheckShouldPause}`)
+                console.log(`...LayerPlacement#continuePlacement ${end - start}`)
                 return true;
             }
         }
+        console.log(`...LayerPlacement#continuePlacement ${performance.now() - start}`)
     }
 }
 
@@ -53,6 +61,7 @@ class PauseablePlacement {
     }
 
     continuePlacement(order: Array<string>, layers: {[string]: StyleLayer}, layerTiles: {[string]: Array<Tile>}) {
+        console.time('...PauseablePlacement#continuePlacement')
         const startTime = browser.now();
 
         const shouldPausePlacement = () => {
@@ -78,6 +87,7 @@ class PauseablePlacement {
                     // We didn't finish placing all layers within 2ms,
                     // but we can keep rendering with a partial placement
                     // We'll resume here on the next frame
+                    console.timeEnd('...PauseablePlacement#continuePlacement')
                     return;
                 }
 
@@ -88,6 +98,7 @@ class PauseablePlacement {
         }
 
         this._done = true;
+        console.time('...PauseablePlacement#continuePlacement')
     }
 }
 

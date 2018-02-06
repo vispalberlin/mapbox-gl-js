@@ -986,16 +986,25 @@ class Style extends Evented {
         }
 
         if (!this.pauseablePlacement.isDone()) {
+            console.log('CONTINUE PLACEMENT')
             this.pauseablePlacement.continuePlacement(this._order, this._layers, layerTiles);
 
             if (this.pauseablePlacement.isDone()) {
                 const placement = this.pauseablePlacement.placement;
                 placementChanged = placement.commit(this.placement, browser.now());
                 if (!this.placement || placementChanged || symbolBucketsChanged) {
+                    const reason = !this.placement ? 'first placement' :
+                        placementChanged ? 'placement changed' :
+                        symbolBucketsChanged ? 'symbol buckets changed' : '';
+                    console.log(`...DO update collision index because ${reason}`)
                     this.placement = placement;
                     this.collisionIndex = this.placement.collisionIndex;
+                } else {
+                    console.log(`...DON'T update collision index`)
                 }
                 this.placement.setRecent(browser.now(), placement.stale);
+            } else {
+                console.log('...placement paused')
             }
 
             if (symbolBucketsChanged) {

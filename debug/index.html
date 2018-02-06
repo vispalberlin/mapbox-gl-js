@@ -8,24 +8,65 @@
     <style>
         body { margin: 0; padding: 0; }
         html, body, #map { height: 100%; }
+
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+
+       #features {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 300px;
+            overflow: auto;
+            background: rgba(255, 255, 255, 0.8);
+        }
+        #map canvas {
+            cursor: crosshair;
     </style>
 </head>
 
 <body>
-<div id='map'></div>
+    <div id='map'></div>
+<pre id='features'></pre>
 
 <script src='/dist/mapbox-gl-dev.js'></script>
-<script src='/debug/access_token_generated.js'></script>
 <script>
 
-var map = window.map = new mapboxgl.Map({
+mapboxgl.accessToken = 'pk.eyJ1IjoibWJ0aW8iLCJhIjoiY2pkMnJ3Ymh0MmtpZTJ3bnhubHB2YzFibCJ9.OroL0QcH7cn2TUCTSbGeMQ';
+var map = new mapboxgl.Map({
     container: 'map',
-    zoom: 12.5,
-    center: [-77.01866, 38.888],
-    style: 'mapbox://styles/mapbox/streets-v10',
-    hash: true
+    style: 'mapbox://styles/mbtio/cjd38u6t543o12roebp8yeo5p',
+    center: [-67.169996, 37.501545],
+    zoom: 12
 });
 
+map.on('load', function () {
+
+      map.addSource('point_11-12', {
+        type: "vector",
+        url: 'mapbox://mbtio.0wxkk8lo'
+      });
+
+      map.addLayer({
+        "id": "point_symbol",
+        "type": "symbol",
+        "source": "point_11-12",
+        "source-layer": "pointgeojson",
+        "layout": {
+          "icon-image": "circle"
+        }
+      });
+
+    setTimeout(() => { map.setZoom(13) }, 500)
+
+});
+
+map.showTileBoundaries = true;
+
+map.on('click', function (e) {
+    var features = map.queryRenderedFeatures(e.point);
+    document.getElementById('features').innerHTML = JSON.stringify(features, null, 2);
+});
 </script>
 </body>
 </html>
